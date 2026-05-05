@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Work Anniversary Pappu!</title>
+    <style>
+        :root {
+            --primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --glass-bg: rgba(255, 255, 255, 0.15);
+            --text-color: #ffffff;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: #1a1a2e;
+            background-image: 
+                radial-gradient(circle at 20% 30%, #4e54c8 0%, transparent 20%),
+                radial-gradient(circle at 80% 70%, #8f94fb 0%, transparent 20%);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            overflow: hidden;
+        }
+
+        .anniversary-card {
+            background: var(--glass-bg);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 20px;
+            padding: 3rem;
+            text-align: center;
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+            max-width: 500px;
+            width: 90%;
+            animation: fadeInScale 0.8s ease-out;
+            position: relative;
+        }
+
+        @keyframes fadeInScale {
+            from { opacity: 0; transform: scale(0.9); }
+            to { opacity: 1; transform: scale(1); }
+        }
+
+        .badge {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            display: inline-block;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        h1 {
+            color: var(--text-color);
+            font-size: 2.5rem;
+            margin: 0.5rem 0;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .name {
+            color: #ffd700; /* Gold color */
+            font-size: 3rem;
+            font-weight: 800;
+            display: block;
+            margin-top: 0.5rem;
+        }
+
+        p {
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-top: 1.5rem;
+        }
+
+        .divider {
+            height: 3px;
+            width: 60px;
+            background: #ffd700;
+            margin: 1.5rem auto;
+            border-radius: 2px;
+        }
+
+        .footer-wish {
+            font-style: italic;
+            font-weight: 300;
+            color: #b0b0b0;
+        }
+
+        /* Confetti elements */
+        .confetti {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background: #ffd700;
+            opacity: 0.7;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="anniversary-card">
+        <div class="badge">🏆</div>
+        <h1>Happy Work <br>Anniversary</h1>
+        <span class="name">PAPPU</span>
+        <div class="divider"></div>
+        <p>Congratulations on another incredible year! Your dedication, talent, and hard work continue to inspire everyone around you.</p>
+        <p class="footer-wish">Cheers to many more successful years together! 🥂</p>
+    </div>
+
+</body>
+</html>
